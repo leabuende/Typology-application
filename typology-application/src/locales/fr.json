@@ -1,0 +1,22 @@
+{
+  "message": "bonjour i18n !!",
+  "navbar": {
+    "products": "produits",
+    "a-propos": "a propos"
+  },
+  "slides":[
+      {
+          "title":"candidature",
+          "description":"un site en vue.js fait en deux jours"
+      },
+      {
+        "title":"réplique",
+        "description":"imparfaite d'un très joli site"
+    },
+    {
+        "title":"passionnée",
+        "description":"j'ai adoré ce petit projet"
+    }
+    
+  ]
+}

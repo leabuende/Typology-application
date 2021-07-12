@@ -1,0 +1,22 @@
+{
+  "message": "hello i18n !!",
+  "navbar": {
+    "products": "products",
+    "a-propos": "about"
+  },
+  "slides":[
+    {
+        "title":"candidate",
+        "description":"a site in vue.js coded in two days"
+    },
+    {
+      "title":"copycat",
+      "description":"imperfect replica of a perfect site"
+  },
+  {
+      "title":"passionate",
+      "description":"i loved working on this project"
+  }
+  
+]
+}
