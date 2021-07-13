@@ -5,40 +5,40 @@
         <slide class="slide">
           <div class="col-12 col-md-6 ">
             <h1 class="slide-title title-font">
-              {{ $t("slides[0].title") }}
+              {{ $t("home.slides[0].title") }}
             </h1>
             <p class="slide-description title-font">
-              {{ $t("slides[0].description") }}
+              {{ $t("home.slides[0].description") }}
             </p>
           </div>
         </slide>
         <slide class="slide">
           <div class="col-12 col-md-6 ">
             <h1 class="slide-title title-font">
-              {{ $t("slides[1].title") }}
+              {{ $t("home.slides[1].title") }}
             </h1>
             <p class="slide-description title-font">
-              {{ $t("slides[1].description") }}
+              {{ $t("home.slides[1].description") }}
             </p>
           </div>
         </slide>
         <slide class="slide">
           <div class="col-12 col-md-6 ">
             <h1 class="slide-title title-font">
-              {{ $t("slides[2].title") }}
+              {{ $t("home.slides[2].title") }}
             </h1>
             <p class="slide-description title-font">
-              {{ $t("slides[2].description") }}
+              {{ $t("home.slides[2].description") }}
             </p>
           </div>
         </slide>
         <slide class="slide">
           <div class="col-12 col-md-6 ">
             <h1 class="slide-title title-font">
-              {{ $t("slides[2].title") }}
+              {{ $t("home.slides[2].title") }}
             </h1>
             <p class="slide-description title-font">
-              {{ $t("slides[2].description") }}
+              {{ $t("home.slides[2].description") }}
             </p>
           </div>
         </slide>
@@ -54,7 +54,7 @@
     <div class="w-100 d-flex justify-content-center">
       <div class="page container">
         <p class="our-products">
-          Our products are Vegan, Cruelty-free, Made in France
+          {{ $t("home.vegan") }}
         </p>
         <div class="line"></div>
         <div class="row d-flex justify-content-center">
@@ -64,12 +64,10 @@
             v-bind:class="[isSticky ? stickyClass : '']"
           >
             <p class="title-font big-title">
-              TEN
+              {{ $t("home.ten") }}
             </p>
             <p class="text-font">
-              Minimalist formulas. Maximum results. TEN products contain no more
-              than ten natural ingredients, are fragrance-free and suitable for
-              sensitive skin.
+              {{ $t("home.ten-description") }}
             </p>
           </div>
 
@@ -94,14 +92,14 @@
                 </div>
                 <div class="dog-description title-font">
                   <p v-if="!hoverdescription[i]">
-                    This is one happy dog, playing with his owner
+                    {{ $t("home.happy-owner") }}
                   </p>
                   <router-link :to="'/product/' + getImageShortcut(dog)">
                   <button
                     class="title-font text-center"
                     v-if="hoverdescription[i]"
                   >
-                    Overview
+                    {{ $t("home.overview") }}
                   </button>
                   </router-link>
                 </div>
@@ -117,12 +115,10 @@
           <div class="row  d-flex justify-content-center">
             <div class="col-12 col-sm-6 sticky-box ">
               <p class="title-font big-title">
-                TEN
+                {{ $t("home.ten") }}
               </p>
               <p class="text-font">
-                Minimalist formulas. Maximum results. TEN products contain no
-                more than ten natural ingredients, are fragrance-free and
-                suitable for sensitive skin.
+                {{ $t("home.ten-description") }}
               </p>
             </div>
 
@@ -134,16 +130,17 @@
     <div class="w-100 ask-diagnostic text-center">
       <div class="w-100 d-flex justify-content-center">
         <h1 class="title-font">
-          Understand your skin and its complex needs.
+         {{ $t("home.understand") }}
         </h1>
       </div>
 
-      <button>Begin diagnostic test</button>
+      <button>         {{ $t("home.diagnostic") }}
+</button>
     </div>
     <div class="w-100 d-flex justify-content-center">
       <div class="page">
         <h1>
-          Typology was born from a mission: to demystify skincare with simple, straight-talking transparency. We make naturally active, effective and sustainable skincare in France.
+         {{ $t("home.mission") }}
         </h1>
       </div>
     </div>
