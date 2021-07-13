@@ -23,14 +23,14 @@
             </div>
           </div>
           <div
-            class="product-box text-font"
+            class="dropdown-navbar-box text-font"
             v-if="hoverlink[0]"
             @mouseleave="$set(hoverlink, 1, false)"
           >
             {{ $t("navbar.nothing") }}
           </div>
           <div
-            class="product-box row"
+            class="dropdown-navbar-box row"
             v-if="hoverlink[1]"
             @mouseleave="$set(hoverlink, 1, false)"
           >
@@ -48,10 +48,11 @@
             </div>
             <div class="d-none d-sm-block col-2">
               <p class="about-title title-font about-section-title">
-               {{ $t("navbar.get-to-know") }}
+                {{ $t("navbar.get-to-know") }}
               </p>
               <p class="about-title text-font">
-{{ $t("navbar.know-description") }}              </p>
+                {{ $t("navbar.know-description") }}
+              </p>
               <router-link to="/about-me">
                 <button class="about-button">{{ $t("navbar.more") }}</button>
               </router-link>
@@ -82,7 +83,7 @@
         <div class="third" :class="{ 'third-animation': dropdown }"></div>
       </div>
     </div>
-    <div class="product-box dropdown" v-if="dropdown">
+    <div class="dropdown-navbar-box dropdown" v-if="dropdown">
       <div class="w-100 text-center">
         <p>{{ $t("navbar.products") }}</p>
       </div>
@@ -106,8 +107,9 @@
 </template>
 
 <script>
-// @ is an alias to /src
+/*Adding internationalization plugin*/
 import i18n from "../i18n";
+
 export default {
   name: "Navbar",
   data() {
@@ -122,7 +124,6 @@ export default {
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
   },
-
   destroyed() {
     window.removeEventListener("scroll", this.handleScroll);
   },
@@ -145,7 +146,10 @@ export default {
   },
 };
 </script>
+
 <style>
+
+/*Global*/
 .navbar {
   width: 100vw;
 }
@@ -154,29 +158,14 @@ export default {
   text-decoration: none;
   text-transform: uppercase;
 }
-.is_scrolled {
-  background: #fdfdfd91;
-}
+
 .nav-links a:hover {
   color: black;
   cursor: pointer;
 }
-.box {
-  height: auto;
-}
-.product-box {
-  background: white;
-  height: auto;
-  width: 100vw;
-  position: fixed;
-  margin-top: 20px;
-  z-index: 3;
-  padding-bottom: 20px;
-}
-.nav-hover {
-  background: white;
-}
 
+
+/*Links dot anilmation*/
 .products:hover .dot-block {
   display: block;
 }
@@ -191,12 +180,39 @@ export default {
   border-radius: 50%;
   position: fixed;
 }
+
+
+/*Dropdown hover links*/
+.dropdown-navbar-box {
+  background: white;
+  height: auto;
+  width: 100vw;
+  position: fixed;
+  margin-top: 20px;
+  z-index: 3;
+  padding-bottom: 20px;
+}
+.nav-hover {
+  background: white;
+}
+.is_scrolled {
+  background: #fdfdfd91;
+}
+.box {
+  height: auto;
+}
+
+
+/*Language*/
 .lang-change p {
   margin-left: 20px;
 }
 .lang-change p:hover {
   cursor: pointer;
 }
+
+
+/*Brand*/
 .brand {
   z-index: 3;
 }
@@ -208,6 +224,41 @@ export default {
   text-decoration: none;
   color: black;
 }
+
+/*About link*/
+.about-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.about-button {
+  text-transform: uppercase;
+  width: 50%;
+  font-size: 14px;
+  border: rgb(100, 100, 100) solid 0.2px;
+  background: white;
+  padding: 10px 0px 10px 0px;
+}
+.about-button:hover {
+  background: black;
+  border: black solid 0.2px;
+  color: white;
+  transition-duration: 0.5s;
+}
+.about-section-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/*Responsive navbar*/
+.dropdown {
+  margin-top: 150px;
+  left: 0;
+  text-transform: uppercase;
+}
+
 /*Burger menu*/
 .burger-wrap {
   height: 40px;
@@ -233,33 +284,5 @@ export default {
 .second-animation {
   display: none;
 }
-.dropdown {
-  margin-top: 150px;
-  left: 0;
-  text-transform: uppercase;
-}
-.about-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-.about-button {
-  text-transform: uppercase;
-  width: 50%;
-  font-size: 14px;
-  border: rgb(100, 100, 100) solid 0.2px;
-  background: white;
-  padding: 10px 0px 10px 0px;
-}
-.about-button:hover {
-  background: black;
-  border: black solid 0.2px;
-  color: white;
-  transition-duration: 0.5s;
-}
-.about-section-title {
-  font-weight: bold;
-  font-size: 20px;
-}
+
 </style>

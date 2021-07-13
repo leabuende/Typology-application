@@ -41,15 +41,20 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: "Product",
 };
 </script>
+
 <style>
+/*Global*/
 #product {
   padding-top: 100px;
 }
+
+/*Product Image*/
 .product-name {
   text-transform: uppercase;
   font-weight: lighter;
@@ -62,6 +67,8 @@ export default {
   margin-bottom: 30px;
   background-repeat: no-repeat;
 }
+
+/*Product Description*/
 .description-box {
   height: 40vh;
   border: 1px solid grey;

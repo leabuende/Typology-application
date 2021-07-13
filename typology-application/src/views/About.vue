@@ -70,6 +70,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import { Carousel, Slide } from "vue-carousel";
 
@@ -86,7 +87,10 @@ export default {
   },
 };
 </script>
+
 <style>
+
+/*Global*/
 .about-page {
   max-width: 1200px;
   padding-top: 100px;
@@ -94,6 +98,8 @@ export default {
 .project-row{
   margin-bottom: 30px;
 }
+
+/*Carousel*/
 .about-carousel{
   margin:30px 0px 30px 0px;
 }
@@ -112,4 +118,5 @@ export default {
 .about-slide:nth-child(3){
   background-image: url("../assets/about/project-carousel/project3.png");
 }
+
 </style>

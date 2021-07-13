@@ -95,12 +95,12 @@
                     {{ $t("home.happy-owner") }}
                   </p>
                   <router-link :to="'/product/' + getImageShortcut(dog)">
-                  <button
-                    class="title-font text-center"
-                    v-if="hoverdescription[i]"
-                  >
-                    {{ $t("home.overview") }}
-                  </button>
+                    <button
+                      class="title-font text-center"
+                      v-if="hoverdescription[i]"
+                    >
+                      {{ $t("home.overview") }}
+                    </button>
                   </router-link>
                 </div>
               </div>
@@ -130,17 +130,16 @@
     <div class="w-100 ask-diagnostic text-center">
       <div class="w-100 d-flex justify-content-center">
         <h1 class="title-font">
-         {{ $t("home.understand") }}
+          {{ $t("home.understand") }}
         </h1>
       </div>
 
-      <button>         {{ $t("home.diagnostic") }}
-</button>
+      <button>{{ $t("home.diagnostic") }}</button>
     </div>
     <div class="w-100 d-flex justify-content-center">
       <div class="page">
         <h1>
-         {{ $t("home.mission") }}
+          {{ $t("home.mission") }}
         </h1>
       </div>
     </div>
@@ -159,10 +158,10 @@ export default {
     Slide,
   },
   metaInfo() {
-    return{
-      title: 'Léa. - '+ this.$t("navbar.welcome")
-    } 
-    },
+    return {
+      title: "Léa. - " + this.$t("navbar.welcome"),
+    };
+  },
   data() {
     return {
       manualNavigation: 0,
@@ -199,15 +198,15 @@ export default {
         }
       }
     },
-    getName(string){
-      var breed = string.split('/').slice(-2)[0]
-      console.log(breed)
-      return breed
+    getName(string) {
+      var breed = string.split("/").slice(-2)[0];
+      console.log(breed);
+      return breed;
     },
-    getImageShortcut(url){
-      var img = url.split('/').slice(-2)[0]+'/'+ url.split('/').slice(-1)[0]
-      return img
-    }
+    getImageShortcut(url) {
+      var img = url.split("/").slice(-2)[0] + "/" + url.split("/").slice(-1)[0];
+      return img;
+    },
   },
   async created() {
     // GET request using fetch with async/await
@@ -223,24 +222,33 @@ export default {
 };
 </script>
 <style>
-.is_sticky {
-  position: fixed;
-  z-index: 1;
-  margin-top: 50px;
-  top: 0;
+/*General and design elements*/
+.page {
+  width: 100%;
+  max-width: 1200px;
 }
-.sticky-row {
-  width: 80vw;
+.our-products {
+  margin: 20px 0px 20px 0px;
+  font-size: 25px;
+  font-weight: bold;
 }
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: rgb(190, 190, 190);
+  margin-bottom: 40px;
+}
+
+.big-title {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+/*Carousel*/
 .slide {
   height: 90vh;
   width: 100vw;
-}
-.row-container {
-  margin: 0;
-}
-.row {
-  padding: 0;
 }
 .slide {
   background-size: cover;
@@ -276,20 +284,21 @@ export default {
     ),
     url("../assets/home-carousel/photo4.jpeg");
 }
-.slide-title{
-  margin-top:30vh;
-  font-size:64px;
+.slide-title {
+  margin-top: 30vh;
+  font-size: 64px;
   text-transform: uppercase;
 }
-.slide-description{
-  font-size:20px;
+.slide-description {
+  font-size: 20px;
   text-transform: uppercase;
 }
-.ask-diagnostic {
-  min-height: 60vh;
-  background-image: url("../assets/woman.jpeg");
-  background-position: center;
+.home-carousel {
+  height: 90vh;
+  position: relative;
 }
+
+/*Carousel pagination animation*/
 .pagination {
   position: absolute;
   bottom: 30px;
@@ -310,34 +319,29 @@ export default {
 .VueCarousel-pagination {
   display: none;
 }
-.home-carousel {
-  height: 90vh;
-  position: relative;
-}
-.page {
-  width: 100%;
-  max-width: 1200px;
-}
-.our-products {
-  margin: 20px 0px 20px 0px;
-  font-size: 25px;
-  font-weight: bold;
-}
 
-.line {
-  width: 100%;
-  height: 1px;
-  background: rgb(190, 190, 190);
-  margin-bottom: 40px;
+/*Sticky article animation*/
+.is_sticky {
+  position: fixed;
+  z-index: 1;
+  margin-top: 50px;
+  top: 0;
+}
+.sticky-row {
+  width: 80vw;
+}
+.row-container {
+  margin: 0;
+}
+.row {
+  padding: 0;
 }
 .sticky-box {
   max-width: 500px;
   z-index: 1;
 }
-.big-title {
-  font-size: 64px;
-  font-weight: bold;
-}
+
+/*Product box*/
 .dog-image {
   height: 40vh;
   width: 100%;
@@ -371,9 +375,14 @@ export default {
   padding-top: 40%;
   text-transform: capitalize;
 }
+
+/*Ask diagnostic button*/
 .ask-diagnostic {
   padding-top: 10%;
-  margin-bottom:100px;
+  margin-bottom: 100px;
+  min-height: 60vh;
+  background-image: url("../assets/woman.jpeg");
+  background-position: center;
 }
 .ask-diagnostic h1 {
   margin-bottom: 30px;

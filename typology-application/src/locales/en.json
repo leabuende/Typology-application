@@ -3,57 +3,54 @@
   "navbar": {
     "products": "Products",
     "a-propos": "About",
-    "welcome":"Welcome",
-    "nothing":"(Site under construction, come back later 👀)",
-    "adventure":"Léa the adventurer",
-    "know":"Léa the know-it-all",
-    "get-to-know":"Get to know Léa",
-    "know-description":"The good and the bad of the best coffee maker in town.",
-    "more":"SEE MORE"
+    "welcome": "Welcome",
+    "nothing": "(Site under construction, come back later 👀)",
+    "adventure": "Léa the adventurer",
+    "know": "Léa the know-it-all",
+    "get-to-know": "Get to know Léa",
+    "know-description": "The good and the bad of the best coffee maker in town.",
+    "more": "SEE MORE"
   },
-  "home":{
-    "slides":[
-        {
-            "title":"candidate",
-            "description":"a site in vue.js coded in two days"
-        },
-        {
-          "title":"copycat",
-          "description":"imperfect replica of a perfect site"
+  "home": {
+    "slides": [
+      {
+        "title": "candidate",
+        "description": "a site in vue.js coded in two days"
       },
       {
-          "title":"passionate",
-          "description":"i loved working on this project"
+        "title": "copycat",
+        "description": "imperfect replica of a perfect site"
+      },
+      {
+        "title": "passionate",
+        "description": "i loved working on this project"
       }
-      
     ],
-    "vegan":"Our products are Vegan, Cruelty-free, Made in France",
-    "ten":"TEN",
-    "ten-description":"Minimalist formulas. Maximum results. TEN products contain no more than ten natural ingredients, are fragrance-free and suitable for sensitive skin.",
-    "happy-owner":"This is one happy dog, playing with his owner",
-    "overview":"OVERVIEW",
-    "understand":"Understand your skin and its complex needs.",
-    "diagnostic":"Begin diagnostic test",
+    "vegan": "Our products are Vegan, Cruelty-free, Made in France",
+    "ten": "TEN",
+    "ten-description": "Minimalist formulas. Maximum results. TEN products contain no more than ten natural ingredients, are fragrance-free and suitable for sensitive skin.",
+    "happy-owner": "This is one happy dog, playing with his owner",
+    "overview": "OVERVIEW",
+    "understand": "Understand your skin and its complex needs.",
+    "diagnostic": "Begin diagnostic test",
     "mission": "Typology was born from a mission: to demystify skincare with simple, straight-talking transparency. We make naturally active, effective and sustainable skincare in France."
   },
-  "product":{
-    "title":"This is a very nice ",
-    "text1":"This is a very good dog, who deserves a lot of treats.",
-    "text2":"Dogs are great, I like dogs.",
-    "cart":"Add to cart"
+  "product": {
+    "title": "This is a very nice ",
+    "text1": "This is a very good dog, who deserves a lot of treats.",
+    "text2": "Dogs are great, I like dogs.",
+    "cart": "Add to cart"
   },
-  "about":{
-    "title":"Hi, I'm Léa",
-    "description":"As I kept and kept going with this project, this is a little page with the essential things to know about me.",
-    "video":"This is my favorite video of all time 🐰",
-    "fav":"This is the project I loved working on the most ❤️",
-    "projects":"And some other projects I've been working on this year",
-    "slides":{
-        "1":"Managing Efrei's Junior-Enterprise",
-        "2":"UI/UX Design and integration with Vue.js",
-        "3":"Design of visuals for a women programmer organization"
+  "about": {
+    "title": "Hi, I'm Léa",
+    "description": "As I kept and kept going with this project, this is a little page with the essential things to know about me.",
+    "video": "This is my favorite video of all time 🐰",
+    "fav": "This is the project I loved working on the most ❤️",
+    "projects": "And some other projects I've been working on this year",
+    "slides": {
+      "1": "Managing Efrei's Junior-Enterprise",
+      "2": "UI/UX Design and integration with Vue.js",
+      "3": "Design of visuals for a women programmer organization"
     }
-}
-  
-
+  }
 }

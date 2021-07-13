@@ -1,60 +1,55 @@
 {
- 
   "navbar": {
     "products": "Produits",
     "a-propos": "A propos",
-    "welcome":"Bienvenue",
-    "nothing":"(Site en chantiers, revenez plus tard 👀)",
-    "adventure":"Léa l'aventurière",
-    "know":"Léa la casse-cou",
-    "get-to-know":"Découvrez Léa",
-    "know-description":"Les bons et mauvais côtés de l'experte en café en personne.",
-    "more":"VOIR PLUS"
-
+    "welcome": "Bienvenue",
+    "nothing": "(Site en chantiers, revenez plus tard 👀)",
+    "adventure": "Léa l'aventurière",
+    "know": "Léa la casse-cou",
+    "get-to-know": "Découvrez Léa",
+    "know-description": "Les bons et mauvais côtés de l'experte en café en personne.",
+    "more": "VOIR PLUS"
   },
-  "home":{
-    "slides":[
-        {
-            "title":"candidature",
-            "description":"un site en vue.js fait en deux jours"
-        },
-        {
-          "title":"réplique",
-          "description":"imparfaite d'un très joli site"
+  "home": {
+    "slides": [
+      {
+        "title": "candidature",
+        "description": "un site en vue.js fait en deux jours"
       },
       {
-          "title":"passionnée",
-          "description":"j'ai adoré ce petit projet"
+        "title": "réplique",
+        "description": "imparfaite d'un très joli site"
+      },
+      {
+        "title": "passionnée",
+        "description": "j'ai adoré ce petit projet"
       }
-      
     ],
-    "vegan":"Nos produits Vegan et Cruelty-free, fabriqués en France.",
-    "ten":"DIX",
-    "ten-description":"Des formules minimalistes. Un Maximum de resultats. DIX produits qui ne contiennent pas plus de dix ingrédients",
-    "happy-owner":"Ceci est un chien heureux et mignon qui joue avec son popriétaire",
-    "overview":"VOIR PLUS",
-    "understand":"Comprends ta peau et ses besoins complexes",
-    "diagnostic":"Lancer le diagnostic",
+    "vegan": "Nos produits Vegan et Cruelty-free, fabriqués en France.",
+    "ten": "DIX",
+    "ten-description": "Des formules minimalistes. Un Maximum de resultats. DIX produits qui ne contiennent pas plus de dix ingrédients",
+    "happy-owner": "Ceci est un chien heureux et mignon qui joue avec son popriétaire",
+    "overview": "VOIR PLUS",
+    "understand": "Comprends ta peau et ses besoins complexes",
+    "diagnostic": "Lancer le diagnostic",
     "mission": "Typology est né d'une mission : démystifier le soin de la peau avec simplicité et transparence. Nos produits sont fabriqués en France, durables et efficaces."
   },
-  "product":{
-    "title":"Ceci est un adorable ",
-    "text1":"Il est un très bon chien, qui ùérite beaucoup de friandises.",
-    "text2":"Les chiens sont bien. J'adore les chiens.",
-    "cart":"Ajouter au panier"
+  "product": {
+    "title": "Ceci est un adorable ",
+    "text1": "Il est un très bon chien, qui ùérite beaucoup de friandises.",
+    "text2": "Les chiens sont bien. J'adore les chiens.",
+    "cart": "Ajouter au panier"
   },
-  "about":{
-      "title":"Salut, je suis Léa",
-      "description":"Comme je me suis plongée de plus en plus dans ce projet, j'ai ajouté ici une petite page avec l'essentiel à savoir à mon sujet.",
-      "video":"Ceci est ma vidéo préférée de tous les temps 🐰",
-      "fav":"Et le projet sur lequel j'ai préféré travailler ❤️",
-      "projects":"Voici quelques autres projets sur lesquels j'ai pu travailler cette année",
-      "slides":{
-          "1":"Gestion de la Junior-Entreprise d'Efrei Paris",
-          "2":"Design UI/UX et intégration Vue.js",
-          "3":"Conception de visuels pour une association de femmes dans la tech"
-      }
+  "about": {
+    "title": "Salut, je suis Léa",
+    "description": "Comme je me suis plongée de plus en plus dans ce projet, j'ai ajouté ici une petite page avec l'essentiel à savoir à mon sujet.",
+    "video": "Ceci est ma vidéo préférée de tous les temps 🐰",
+    "fav": "Et le projet sur lequel j'ai préféré travailler ❤️",
+    "projects": "Voici quelques autres projets sur lesquels j'ai pu travailler cette année",
+    "slides": {
+      "1": "Gestion de la Junior-Entreprise d'Efrei Paris",
+      "2": "Design UI/UX et intégration Vue.js",
+      "3": "Conception de visuels pour une association de femmes dans la tech"
+    }
   }
-  
-
 }
