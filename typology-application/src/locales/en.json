@@ -1,8 +1,9 @@
 {
   "message": "hello i18n !!",
   "navbar": {
-    "products": "products",
-    "a-propos": "about"
+    "products": "Products",
+    "a-propos": "About",
+    "welcome":"Welcome"
   },
   "slides":[
     {

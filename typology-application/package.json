@@ -13,6 +13,7 @@
     "vue": "^2.6.11",
     "vue-carousel": "^0.18.0",
     "vue-i18n": "^8.24.5",
+    "vue-meta": "^2.4.0",
     "vue-router": "^3.5.2"
   },
   "devDependencies": {

@@ -41,4 +41,13 @@ button{
   box-sizing: border-box;
   margin: 0;
 }
+::-moz-selection { /* Code for Firefox */
+  color: #9C6137;
+  background: #ffeecf;
+}
+
+::selection {
+   color: #9C6137;
+  background: #fff4c2;
+}
 </style>

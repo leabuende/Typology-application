@@ -89,19 +89,21 @@
                   :class="{ 'darken-dog': hoverdescription[i] }"
                 >
                   <p class="dog-name text-font" v-if="hoverdescription[i]">
-                    {{ names[i] }}
+                    {{ getName(dog) }}
                   </p>
                 </div>
                 <div class="dog-description title-font">
                   <p v-if="!hoverdescription[i]">
                     This is one happy dog, playing with his owner
                   </p>
+                  <router-link :to="'/product/' + getImageShortcut(dog)">
                   <button
                     class="title-font text-center"
                     v-if="hoverdescription[i]"
                   >
                     Overview
                   </button>
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -159,6 +161,11 @@ export default {
     Carousel,
     Slide,
   },
+  metaInfo() {
+    return{
+      title: 'Léa. - '+ this.$t("navbar.welcome")
+    } 
+    },
   data() {
     return {
       manualNavigation: 0,
@@ -195,6 +202,15 @@ export default {
         }
       }
     },
+    getName(string){
+      var breed = string.split('/').slice(-2)[0]
+      console.log(breed)
+      return breed
+    },
+    getImageShortcut(url){
+      var img = url.split('/').slice(-2)[0]+'/'+ url.split('/').slice(-1)[0]
+      return img
+    }
   },
   async created() {
     // GET request using fetch with async/await
@@ -212,7 +228,7 @@ export default {
 <style>
 .is_sticky {
   position: fixed;
-  z-index: 4;
+  z-index: 1;
   margin-top: 50px;
   top: 0;
 }
@@ -319,7 +335,7 @@ export default {
 }
 .sticky-box {
   max-width: 500px;
-  z-index: 3;
+  z-index: 1;
 }
 .big-title {
   font-size: 64px;
